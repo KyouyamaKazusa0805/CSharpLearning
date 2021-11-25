@@ -11,6 +11,6 @@ class Program
 	static void Main()
 	{
 		// 代码文字。
-		Console.WriteLine("Hello, World!");
+		Console.WriteLine("Hello, Sunnie!");
 	}
 }
