@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLearning.Playground", "src\CSharpLearning.Playground\CSharpLearning.Playground.csproj", "{51163CE3-DE1E-4517-A872-A9A88279B383}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpLearning.Playground", "src\CSharpLearning.Playground\CSharpLearning.Playground.csproj", "{51163CE3-DE1E-4517-A872-A9A88279B383}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "第0部分 全局文件", "第0部分 全局文件", "{D7CE6540-5C5B-4DCF-BAD7-9572637EDC38}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,11 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "第0部分 全局文件", "
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial001", "src\Tutorial001\Tutorial001.csproj", "{C7264917-7553-4866-95F9-B96C8F1992C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial001", "src\Tutorial001\Tutorial001.csproj", "{C7264917-7553-4866-95F9-B96C8F1992C2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "第1部分 基本语法篇", "第1部分 基本语法篇", "{39B86FAC-C67A-4DE7-8F32-F069EC4976EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial003", "src\Tutorial003\Tutorial003.csproj", "{6AC595B3-4FFF-4864-A149-DFE2E7FECCF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial003", "src\Tutorial003\Tutorial003.csproj", "{6AC595B3-4FFF-4864-A149-DFE2E7FECCF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "第2部分 数据类型", "第2部分 数据类型", "{E6D08A2F-F85B-423C-9096-4EC26605233F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial005", "src\Tutorial005\Tutorial005.csproj", "{596ED7A0-78D1-426B-9E35-2196DBEE2607}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial010", "src\Tutorial010\Tutorial010.csproj", "{BEC8E965-37FF-4B0D-A9B3-0138AAFEE4F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +41,14 @@ Global
 		{6AC595B3-4FFF-4864-A149-DFE2E7FECCF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AC595B3-4FFF-4864-A149-DFE2E7FECCF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AC595B3-4FFF-4864-A149-DFE2E7FECCF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{596ED7A0-78D1-426B-9E35-2196DBEE2607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596ED7A0-78D1-426B-9E35-2196DBEE2607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596ED7A0-78D1-426B-9E35-2196DBEE2607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596ED7A0-78D1-426B-9E35-2196DBEE2607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEC8E965-37FF-4B0D-A9B3-0138AAFEE4F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC8E965-37FF-4B0D-A9B3-0138AAFEE4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC8E965-37FF-4B0D-A9B3-0138AAFEE4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC8E965-37FF-4B0D-A9B3-0138AAFEE4F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +56,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C7264917-7553-4866-95F9-B96C8F1992C2} = {39B86FAC-C67A-4DE7-8F32-F069EC4976EC}
 		{6AC595B3-4FFF-4864-A149-DFE2E7FECCF9} = {39B86FAC-C67A-4DE7-8F32-F069EC4976EC}
+		{596ED7A0-78D1-426B-9E35-2196DBEE2607} = {E6D08A2F-F85B-423C-9096-4EC26605233F}
+		{BEC8E965-37FF-4B0D-A9B3-0138AAFEE4F7} = {E6D08A2F-F85B-423C-9096-4EC26605233F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC66C46F-804E-4335-952B-06733C66B149}
