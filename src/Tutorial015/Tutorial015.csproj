@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<NoWarn>CS0219;IDE0059</NoWarn>
+	</PropertyGroup>
+
+</Project>
