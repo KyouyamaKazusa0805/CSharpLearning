@@ -2,7 +2,6 @@
 
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
-		<NoWarn>CS0219</NoWarn>
 	</PropertyGroup>
 
 </Project>
