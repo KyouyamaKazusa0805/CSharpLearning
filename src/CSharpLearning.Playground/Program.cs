@@ -1,8 +1,10 @@
-﻿using System;
-
-class Program
+﻿namespace System
 {
-	static void Main()
+	class Program
 	{
+		static void Main()
+		{
+			Console.WriteLine("Hello, world!");
+		}
 	}
 }

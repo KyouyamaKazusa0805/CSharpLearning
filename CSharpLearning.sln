@@ -39,11 +39,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial018", "src\Tutorial
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial019", "src\Tutorial019\Tutorial019.csproj", "{CD0F619B-7EFB-4218-8836-DCD187458E9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial020", "src\Tutorial020\Tutorial020.csproj", "{2996B77A-8314-455D-9944-2D1992C1AB6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial020", "src\Tutorial020\Tutorial020.csproj", "{2996B77A-8314-455D-9944-2D1992C1AB6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial021", "src\Tutorial021\Tutorial021.csproj", "{7AF9E1D0-282E-4981-A2AB-5EFC410436FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial021", "src\Tutorial021\Tutorial021.csproj", "{7AF9E1D0-282E-4981-A2AB-5EFC410436FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial022", "src\Tutorial022\Tutorial022.csproj", "{C0508D1C-7097-4DDC-B744-52243731592D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial022", "src\Tutorial022\Tutorial022.csproj", "{C0508D1C-7097-4DDC-B744-52243731592D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
