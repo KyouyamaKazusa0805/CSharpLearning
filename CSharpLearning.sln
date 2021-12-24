@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 全局文件", "00 全�
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
 		README.md = README.md
-		Video Label List.md = Video Label List.md
+		Video-List.md = Video-List.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial001", "src\Tutorial001\Tutorial001.csproj", "{C7264917-7553-4866-95F9-B96C8F1992C2}"
