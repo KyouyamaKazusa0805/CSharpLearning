@@ -80,13 +80,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 流程控制篇", "04 �
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-2 循环结构篇", "04-2 循环结构篇", "{F14F9BEE-266B-42F5-A057-48C29F8C778B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial041", "src\Tutorial041\Tutorial041.csproj", "{82F7EB03-D450-49F3-87DB-B58D8779FB4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial041", "src\Tutorial041\Tutorial041.csproj", "{82F7EB03-D450-49F3-87DB-B58D8779FB4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial042", "src\Tutorial042\Tutorial042.csproj", "{C9F51F54-865D-45D8-9CE9-6DFBAE3CC0CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial042", "src\Tutorial042\Tutorial042.csproj", "{C9F51F54-865D-45D8-9CE9-6DFBAE3CC0CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial043", "src\Tutorial043\Tutorial043.csproj", "{71E33874-7121-4E8B-A62A-252FB015182E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial043", "src\Tutorial043\Tutorial043.csproj", "{71E33874-7121-4E8B-A62A-252FB015182E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial044", "src\Tutorial044\Tutorial044.csproj", "{03A9324F-0ECE-4049-ABFA-6E1282A3E37B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial044", "src\Tutorial044\Tutorial044.csproj", "{03A9324F-0ECE-4049-ABFA-6E1282A3E37B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
