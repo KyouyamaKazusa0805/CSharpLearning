@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<NoWarn>CS0162, CS0642</NoWarn>
+	</PropertyGroup>
+
+</Project>
