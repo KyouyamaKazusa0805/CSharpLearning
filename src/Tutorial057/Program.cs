@@ -13,13 +13,20 @@ class Program
 
 		// 在这里，用户如果输入的东西不是可以转为整数表达的字符串的话，
 		// 就必然会导致程序闪退。
-		string s = Console.ReadLine();
-		int i = int.Parse(s);
-		if (i > 0)
-			Console.WriteLine("i 是大于 0 的数字。");
-		else if (i < 0)
-			Console.WriteLine("i 是小于 0 的数字。");
-		else
-			Console.WriteLine("i 就是 0。");
+		try
+		{
+			string s = Console.ReadLine();
+			int i = int.Parse(s);
+			if (i > 0)
+				Console.WriteLine("i 是大于 0 的数字。");
+			else if (i < 0)
+				Console.WriteLine("i 是小于 0 的数字。");
+			else
+				Console.WriteLine("i 就是 0。");
+		}
+		catch (FormatException)
+		{
+			Console.WriteLine("你输入的不是一个合适的整数。");
+		}
 	}
 }
