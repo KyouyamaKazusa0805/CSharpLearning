@@ -193,7 +193,7 @@ List<string> r2 = values.ToList();
 ```c#
 var values = new List<string> { "hello", ",", " ", "world", "!" };
 
-var result = values.Aggregate((s, v) => $"{s}{v}");
+var result = values.Aggregate((s, v) => string.Format("{0}{1}", s, v));
 Console.WriteLine(result);
 ```
 
@@ -202,13 +202,13 @@ Console.WriteLine(result);
 第二个重载需要加入一个初始值 `seed` 参数。即可以改写一下上面的写法：
 
 ```c#
-var result = values.Aggregate("Sunnie, ", (s, v) => $"{s}{v}");
+var result = values.Aggregate("Sunnie, ", (s, v) => string.Format("{0}{1}", s, v));
 ```
 
 第三个重载，则在最后增加一个参数，用于指定聚合的处理情况。如下代码所示。
 
 ```c#
-var result = values.Aggregate("Sunnie, ", (s, v) => $"{s}{v}", v => v.ToUpper());
+var result = values.Aggregate("Sunnie, ", (s, v) => string.Format("{0}{1}", s, v), v => v.ToUpper());
 ```
 
 这个聚合操作，将会把所有聚合的元素全部先转为大写，然后输出。自然结果就是 `"SUNNIE, HELLO, WORLD!"` 了。是不是很神奇呢？
