@@ -202,9 +202,9 @@ string targetValue = d.Hello(); // Here.
 ```csharp
 dynamic person = XElement.Parse(
     @"<Person>
-              <FirstName>Sunnie</FirstName>
-              <LastName>Shine</LastName>
-            </Person>"
+      <FirstName>Sunnie</FirstName>
+      <LastName>Shine</LastName>
+    </Person>"
 );
 
 string firstName = Enumerable.First(person.Descendants("FirstName")).Value;
