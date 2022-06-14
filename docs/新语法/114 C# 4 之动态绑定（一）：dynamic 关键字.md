@@ -3,7 +3,7 @@
 欢迎来到 C# 4！从这里开始，我们将带领各位学习 C# 4 的相关语法。C# 4 一共拥有的新语法特性只有三个：
 
 * **动态绑定**（Dynamic Binding）；
-* **泛型委托和接口的泛型参数协变性和你变性**（Co-variance & Contra-variance on Generic Delegate & Interface Types）；
+* **泛型委托和接口的泛型参数协变性和逆变性**（Co-variance & Contra-variance on Generic Delegate & Interface Types）；
 * **可选参数**（Optional Parameter）和**命名参数**（Naming Parameter）。
 
 我们将挨个给大家介绍。
