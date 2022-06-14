@@ -30,11 +30,11 @@ var englishDic = new Dictionary<string, string> { { "AddOperationName", "add" } 
 ```csharp
 internal struct ResourceDictionary
 {
-	private readonly IDictionary<string, string> _kvp;
+    private readonly IDictionary<string, string> _kvp;
 
-	public ResourceDictionary(IDictionary<string, string> rawValues) { _kvp = rawValues; }
+    public ResourceDictionary(IDictionary<string, string> rawValues) { _kvp = rawValues; }
 
-	public string this[string key] { get { return _kvp[key]; } }
+    public string this[string key] { get { return _kvp[key]; } }
 }
 ```
 
@@ -75,14 +75,14 @@ switch (culture.Name)
 ```csharp
 internal sealed class Resource
 {
-	private readonly IDictionary<string, ResourceDictionary> _dics = new Dictionary<string, ResourceDictionary>();
+    private readonly IDictionary<string, ResourceDictionary> _dics = new Dictionary<string, ResourceDictionary>();
 
-	public Resource() { }
+    public Resource() { }
 
-	public void Add(string cultureName, ResourceDictionary dictionary)
-	{
-		_dics.Add(cultureName, dictionary);
-	}
+    public void Add(string cultureName, ResourceDictionary dictionary)
+    {
+        _dics.Add(cultureName, dictionary);
+    }
 }
 ```
 
@@ -382,73 +382,73 @@ using System.Linq;
 
 internal static class Program
 {
-	private static void Main()
-	{
-		var chineseDic = new Dictionary<string, string> { { "AddOperationName", "求和" } };
-		var englishDic = new Dictionary<string, string> { { "AddOperationName", "add" } };
+    private static void Main()
+    {
+        var chineseDic = new Dictionary<string, string> { { "AddOperationName", "求和" } };
+        var englishDic = new Dictionary<string, string> { { "AddOperationName", "add" } };
 
-		var chineseResourceDic = new ResourceDictionary(chineseDic);
-		var englishResourceDic = new ResourceDictionary(englishDic);
+        var chineseResourceDic = new ResourceDictionary(chineseDic);
+        var englishResourceDic = new ResourceDictionary(englishDic);
 
-		Resource.Instance.Add("zh-CN", chineseResourceDic);
-		Resource.Instance.Add("en-US", englishResourceDic);
+        Resource.Instance.Add("zh-CN", chineseResourceDic);
+        Resource.Instance.Add("en-US", englishResourceDic);
 
-		string addOperationName = Resource.Instance.AddOperationName;
-		Console.WriteLine(addOperationName);
-	}
+        string addOperationName = Resource.Instance.AddOperationName;
+        Console.WriteLine(addOperationName);
+    }
 }
 
 internal struct ResourceDictionary
 {
-	private readonly IDictionary<string, string> _kvp;
+    private readonly IDictionary<string, string> _kvp;
 
-	public ResourceDictionary(IDictionary<string, string> rawValues) { _kvp = rawValues; }
+    public ResourceDictionary(IDictionary<string, string> rawValues) { _kvp = rawValues; }
 
-	public string this[string key] { get { return _kvp[key]; } }
+    public string this[string key] { get { return _kvp[key]; } }
 }
 
 internal sealed class Resource : DynamicObject
 {
-	public static readonly dynamic Instance = new Resource();
-	private readonly IDictionary<string, ResourceDictionary> _dics = new Dictionary<string, ResourceDictionary>();
+    public static readonly dynamic Instance = new Resource();
+    private readonly IDictionary<string, ResourceDictionary> _dics = new Dictionary<string, ResourceDictionary>();
 
-	private Resource() { }
+    private Resource() { }
 
-	public string this[string key]
-	{
-		get
-		{
-			string cultureName = CultureInfo.CurrentCulture.Name;
-			ResourceDictionary resourceDic;
-			try
-			{
-				resourceDic = _dics.First(kvp => kvp.Key == cultureName).Value;
-			}
-			catch (InvalidOperationException)
-			{
-				resourceDic = _dics["en-US"];
-			}
+    public string this[string key]
+    {
+        get
+        {
+            string cultureName = CultureInfo.CurrentCulture.Name;
+            ResourceDictionary resourceDic;
+            try
+            {
+                resourceDic = _dics.First(kvp => kvp.Key == cultureName).Value;
+            }
+            catch (InvalidOperationException)
+            {
+                resourceDic = _dics["en-US"];
+            }
 
-			return resourceDic[key];
-		}
-	}
+            return resourceDic[key];
+        }
+    }
 
-	public void Add(string cultureName, ResourceDictionary dictionary) { _dics.Add(cultureName, dictionary); }
-	public override bool TryGetMember(GetMemberBinder binder, out object result)
-	{
-		string propertyReference = binder.Name;
+    public void Add(string cultureName, ResourceDictionary dictionary) { _dics.Add(cultureName, dictionary); }
+    public override bool TryGetMember(GetMemberBinder binder, out object result)
+    {
+        string propertyReference = binder.Name;
 
-		try
-		{
-			result = this[propertyReference];
-			return true;
-		}
-		catch
-		{
-			result = null;
-			return false;
-		}
-	}
+        try
+        {
+            result = this[propertyReference];
+            return true;
+        }
+        catch
+        {
+            result = null;
+            return false;
+        }
+    }
 }
 ```
 
